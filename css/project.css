@@ -1,0 +1,398 @@
+html,body{
+    margin: 0;
+    padding: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 14px;
+    /* overflow: hidden; */
+}
+/* DEFAULTS */
+a{
+    text-decoration: none;
+    color: black;
+}
+li{
+    list-style: none;
+}
+
+/* MAIN CONTENT */
+.container{
+    display: grid;
+    grid-template-columns: 100px 1fr 300px;
+    grid-template-rows: 80px 1fr 50px;
+    grid-template-areas: 
+    "header header header"
+    "side-navigation main activity-area"
+    "footer footer footer";
+    height: 100vh;
+}
+.main{
+    grid-area: main;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    grid-gap: 10px;
+    align-items: flex-start;
+    z-index: 10;
+}
+/* Column */
+.column{
+    display: grid;
+    grid-template-rows: 1fr;
+    margin: 10px;
+    border-radius: 25px;
+    border-style: dotted;
+    border-color: #ccc;
+    min-height: 15em;
+    padding-bottom: 50px;
+    
+    
+}
+.column-header{
+    display: grid;
+    grid-auto-flow: column;
+    justify-content: space-between;
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    height: 50px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 6px rgba(209, 209, 209, 1);
+    text-align: center;
+}
+.column-header-text{
+    margin-left: 20px;
+    line-height: 18px;
+    font-size: 18px;
+    color: #777;
+    word-wrap: break-word;
+    max-width: 230px;
+}
+.column-header-btn{
+    background-color: #ff6600;
+    border: none;
+    color: black;
+    text-align: center;
+    text-decoration: none;
+    width: 50px;
+    border-radius: 0 10px 10px 0;
+}
+/* Card */
+.card-project{
+        display: block;
+        margin: 10px;
+        border-radius: 15px;
+        background-color: #fff;
+        border: 1px solid #ccc;
+        box-shadow: 2px 2px 6px rgba(209, 209, 209, 1);
+}
+/* Card Content */
+.card-header{
+    display: grid;
+    grid-auto-flow: column;
+    justify-content: space-between;
+}
+.card-title{
+    margin-left: 10px;
+    color: #777;
+}
+.card-title-button{
+    background-color: #589bea;
+    border: none;
+    color: black;
+    text-align: center;
+    text-decoration: none;
+    width: 50px;
+    border-radius: 0 10px 0 10px;
+}
+.card-members{
+    background: #eeee;
+    border-radius: 0 0 15px 15px;
+}
+.person{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    margin: 5px;
+    height: 30px;
+    width: 30px;
+    border-radius: 15px;
+    background-color: gold;
+    text-align: center;
+}
+
+
+/* Card Edit window Fredrik H*/
+
+
+#editCardWindow{
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+    
+width: 50vh;
+height: 60vh;
+background-color: black;
+z-index: 12;
+border-radius: 25px;
+opacity: 0.88;
+overflow: visible;
+
+
+}
+
+#cardEditBtn{
+  position: absolute; 
+  bottom: 20px; 
+  width: 30%; 
+  height: 40px; 
+  border: 1px solid #589bea;
+  left:0;
+  right:0;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 10px;
+  background-color: #589bea;
+  color: black;
+  text-align:center;
+  font-size: 16px;
+  
+}
+
+#cardEditBtn:hover{
+    background-color: #8ebcf1;
+    color: black;
+}
+
+
+.edit-Name{
+    
+text-align: center;
+color: white;
+width: 80%;
+margin: auto;
+margin-top: 20px;
+}
+
+#backgroundBlocker{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 200vh;
+    height: 100vh;
+    transform: translate(-50%, -50%);
+    background-color: black;
+    opacity: 0.2;
+    z-index: 10;
+}
+
+#des{
+  position: absolute; 
+  bottom: 22%; 
+  width: 70%; 
+  height: 60%; 
+  border: 1px solid black;
+  left:0;
+  right:0;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 10px;
+  background-color: #121212;
+  color: white;
+  text-align:center;
+  overflow-wrap: break-word;
+   
+}
+
+#des-text{
+    margin: 10px;
+    font-size: 16px;
+    text-align: left;
+    outline: none;
+    height: 90%;
+}
+
+#editZoneWindow{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    width: 45vh;
+    height: 18vh;
+    background-color: black;
+    z-index: 12;
+    border-radius: 25px;
+    opacity: 0.88;
+    overflow: visible;
+    
+}
+
+#zoneEditBtn{
+  position: absolute; 
+  bottom: 20px; 
+  width: 30%; 
+  height: 40px; 
+  border: 1px solid #ff6600;
+  left:0;
+  right:0;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 10px;
+  background-color: #ff6600;
+  color: black;
+  text-align:center;
+  font-size: 16px;
+  
+}
+
+#zoneEditBtn:hover{
+    background-color: #ff8533;
+    color: black;
+}
+
+
+
+#zoneEditBtn{
+  position: absolute; 
+  bottom: 20px; 
+  width: 30%; 
+  height: 40px; 
+  border: 1px solid #ff6600;
+  left:0;
+  right:0;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 10px;
+  background-color: #ff6600;
+  color: black;
+  text-align:center;
+  font-size: 16px;
+  
+}
+
+#zoneEditBtn:hover{
+    background-color: #ff8533;
+    color: black;
+}
+
+
+#delete-Zone-btn{
+  position: absolute; 
+  bottom: 70px; 
+  width: 30%; 
+  height: 40px; 
+  border: 1px solid #ff6600;
+  left:0;
+  right:0;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 10px;
+  background-color: #ff6600;
+  color: black;
+  text-align:center;
+  font-size: 16px;
+  
+}
+
+#delete-Zone-btn:hover{
+    background-color: #ff8533;
+    color: black;
+}
+
+/* Fredrik J edit */
+#userDiv {
+    position: absolute;
+    width: 70px;
+    height: 200px;
+    right: -50px;
+    top: 0;
+    background-color: #121212;
+    height: 100%;
+    border-bottom-right-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.userDiv{
+    display: grid;
+    justify-content: right;
+    align-content: center;
+    grid-auto-flow: column;
+    grid-gap: 1.5em;
+    color: white;
+    margin-right: 20px;
+    
+    
+}
+
+.users{
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    margin-left: 13px;
+    text-align: center;
+    
+    
+}
+
+.users:hover{
+    cursor: pointer;
+}
+
+.textUsers {
+    text-align: center;
+    vertical-align: middle;
+    font-weight: bold;
+    font-size: 21px;
+    line-height: 50px;
+    
+}
+
+#cardMembersEdit{
+    position: absolute;
+    width: 70px;
+    height: 200px;
+    left: 0;
+    top: 0;
+    height: 100%;
+    color: black;
+    
+}
+
+#EditDeadLine{
+  position: absolute; 
+  bottom: 80px; 
+  width: 160px;
+  height: 30px;
+  border: 1px solid #589bea;
+  left:0;
+  right:0;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 10px;
+  background-color: #589bea;
+  color: black;
+  text-align:center;
+  font-size: 16px;
+  
+}
+
+.userHover{
+    visibility: hidden;
+    width: 100px;
+    background-color: rgba(0,0,0, 0.8);
+    color: white;
+    text-align: center;
+    border-radius: 5px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 100;
+    left: 6em;
+    font-size: 14px;
+    font-weight: bold;
+    
+}
+
+.users:hover .userHover{
+    visibility: visible;
+}

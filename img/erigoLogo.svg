@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="300" height="300" viewBox="0 0 300 300">
+  <g id="Group_26" data-name="Group 26" transform="translate(-715 -261)">
+    <rect id="Rectangle_22" data-name="Rectangle 22" width="300" height="300" rx="100" transform="translate(715 261)" fill="#fff"/>
+    <g id="Group_25" data-name="Group 25" transform="translate(525.514 -5.666)">
+      <text id="看板" transform="translate(208.827 464.745)" fill="#eee" font-size="130" font-family="PingFangSC-Semibold, PingFang SC" font-weight="600"><tspan x="0" y="0">看板</tspan></text>
+      <text id="看板-2" data-name="看板" transform="translate(212.349 465.207)" fill="#589bea" font-size="130" font-family="PingFangSC-Semibold, PingFang SC" font-weight="600"><tspan x="0" y="0">看板</tspan></text>
+      <text id="看板-3" data-name="看板" transform="translate(206.632 461.499)" fill="#f60" font-size="130" font-family="PingFangSC-Semibold, PingFang SC" font-weight="600"><tspan x="0" y="0">看板</tspan></text>
+    </g>
+  </g>
+</svg>

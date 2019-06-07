@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./css/dashboard.css">
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="icon" href="./img/erigoIcon.png">
+    <script src="https://kit.fontawesome.com/a23c2d46ea.js"></script>
+    <title>Gruppe 31 | Kanban</title>
+</head>
+<body id="body">
+
+
+    <!-- GRID -->
+    <div class="container">
+        <!-- HEADER -->
+    <header class="header">
+            <nav class="nav">
+                <div class="navbar">
+                    <div class="logo">
+                            <a href="./dashboard.html"><img class="cm-logo" src="./img/erigoLogo2.svg" alt=""></a>
+                    </div>
+                    <div id="userDiv" class="userDiv"></div>
+                    <div class="quickFix">
+                        <div id="dark-mode-icon" class="DarkIcon"><i class="fas fa-adjust cm-icon-2"></i></div>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <aside class="side-navigation">
+            <ul class="sidenav-list">
+
+                <li id="btnCreateCard" class="sidenav-list-item"><div class="icon-container"><i class="fas fa-plus cm-icon"></i>
+                    <span class="tooltip">Add Project</span>
+                </div></li>
+                <li id="btnHistory" class="sidenav-list-item"><div id="sibBtnHistory" class="icon-container"><i id="btnHistoryIcon"class="fas fa-history cm-icon"></i>
+                    <span class="tooltip">Drag project to history</span>
+                </div></li>
+                <li class="sidenav-list-item"><div id="cardDisposal" class="icon-container"><i class="fas fa-trash cm-icon"></i>
+                    <span class="tooltip">Drag to delete</span>
+                </div></li>
+                <li class="sidenav-list-item"><a href="./welcome.html"><div class="icon-container"><i class="fas fa-sign-out-alt cm-icon"></i>
+                    <span class="tooltip">Sign Out</span>
+                </div></a></li>
+
+            </ul>
+        </aside>
+        <main class="main" id="main">
+
+            <!-- <article class="cm-card cm-shadow-wb">
+                <div class="cm-text">
+                    <h3>Title</h3>
+                    <p>Some info</p>
+                    <button class="cm-button"><a href="./project.html">Enter</a></button>
+                </div>
+            </article>
+
+            <article class="card-project">
+                <div class="card-header">
+                    <h3 class="card-title">Title</h3>
+                    <button class="card-title-button">
+                        <i class="fas fa-ellipsis-h"></i>
+                    </button>
+                </div>
+                <div class="card-content"></div>
+                <div class="card-members cm-grid-light">
+                    <div class="person"></div>
+                </div>
+            </article> -->
+
+        </main>
+
+        <section class="secondary-content" id="historyProject">
+                
+        </section>
+
+         <aside class="activity-area">
+            <div id="activityContainer" class="activity-area-container cm-shadow-c">
+                    <h3 class="activity-header">Activity</h3>
+            </div>
+        </aside>
+        <footer class="footer">
+            <div class="footer-content">
+                <h6 class="cm-h6">PRO101 Westerdals - Gruppe 31</h6>
+                <img src="./img/erigoLogo2.svg" alt="" class="cm-footer-icon">
+                <h6 class="cm-h6">&copy; 2019</h6>
+            </div>
+        </footer>
+    </div>
+    <script src="./js/cookies.js"></script>
+    <script src="./js/dashboard.js"></script>
+    <script src="./js/darkmode.js"></script>
+</body>
+</html>

@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1920" height="1083" viewBox="0 0 1920 1083">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#589bea"/>
+      <stop offset="1" stop-color="#0d4d96"/>
+    </linearGradient>
+    <filter id="Path_1" x="0" y="0" width="1384.893" height="1083" filterUnits="userSpaceOnUse">
+      <feOffset dx="10" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="0.5" result="blur"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="Group_29" data-name="Group 29" transform="translate(0 1.5)">
+    <g id="Group_28" data-name="Group 28">
+      <rect id="Rectangle_17" data-name="Rectangle 17" width="1920" height="1080" fill="url(#linear-gradient)"/>
+    </g>
+    <g transform="matrix(1, 0, 0, 1, 0, -1.5)" filter="url(#Path_1)">
+      <path id="Path_1-2" data-name="Path 1" d="M0,0H1201.91s-138.562,44.211-36.633,134.117,279.431,90.192,177.663,225.508S882.556,595.688,891.891,775.781,1262.754,1080,1262.754,1080H0Z" transform="translate(0 1.5)" fill="#fff"/>
+    </g>
+  </g>
+</svg>

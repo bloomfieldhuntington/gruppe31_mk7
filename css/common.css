@@ -1,0 +1,362 @@
+/* COMMON STYLES */
+/**
+
+All styles are written like this: cm-<name>-<option>. 
+For example: cm-shadow-wb = shadow with border.
+
+INDEX:
+1 Grid
+2 Card
+3 Shadow
+4 Button
+5 Icon
+
+*/
+a{
+    color: white;
+}
+
+/* ACTIVITY SCROLL */
+::-webkit-scrollbar{
+    width: 5px;
+    border-radius: 2.5px;
+    visibility: hidden;
+
+}
+::-webkit-scrollbar-track{
+    background:white;
+    visibility: hidden;
+}
+::-webkit-scrollbar-thumb{
+    background: #888;
+    visibility: hidden;
+}
+
+/* GRID (layout) */
+.cm-grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    grid-gap: 20px;
+    align-items: flex-start;
+}
+.cm-grid-light{
+    /* Replaces "superGrid" */
+    display: grid;
+    grid-auto-flow: column;
+    justify-content: center;
+}
+
+/* CARD */
+.cm-card{
+    display: flex;
+    margin: 20px;
+    border-radius: 15px;
+}
+.cm-card-2{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    width: 90%;
+    border-radius: 5px;
+}
+.cm-card-3{
+    display: block;
+    margin: 10px;
+    border-radius: 15px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    box-shadow: 2px 2px 6px rgba(209, 209, 209, 1);
+}
+.cm-card-4{
+    display: block;
+    background: inherit;
+    box-shadow: inset 0 0 0 200px rgba(255,255,255,0.4);
+}
+.cm-card-5{
+    display: block;
+    margin: 10px;
+    border-radius: 15px;
+    background-color: #fff;
+    box-shadow: 0px 0px 3px rgba(33, 33, 33, 0.5);
+}
+
+/* SHADOW */
+.cm-shadow{
+    box-shadow: 2px 2px 6px rgba(209, 209, 209, 1);
+}
+.cm-shadow-wb{
+    border: 1px solid #dddd;
+    box-shadow: 2px 2px 6px rgba(209, 209, 209, 1);
+}
+.cm-shadow-c{
+    box-shadow: 0px 0px 2px rgba(209, 209, 209, 1);
+}
+.cm-shadow-l{
+    box-shadow: 5px 0px 6px rgba(209, 209, 209, 1);
+}
+
+/* BORDER */
+.cm-border{
+    border: 1px solid rgba(209,209,209,0.4);
+}
+
+/* BUTTON */
+.cm-button{
+    background-color: #589bea;
+    border: none;
+    color: #fff;
+    text-align: center;
+    height: 35px;
+    border-radius: 5px;
+    font-size: 12px;
+    text-transform: uppercase;
+    transition: all 0.1s;
+}
+.cm-button:hover{
+    background-color: #589bea;
+    border: 1px solid #fff;
+    font-weight: bold;
+    color: #fff;
+}
+.cm-button-b{
+    background-color: #fff;
+    border: 1px solid #589bea;
+    color: #589bea;
+    text-align: center;
+    height: 35px;
+    border-radius: 5px;
+    font-size: 12px;
+    text-transform: uppercase;
+    transition: all 0.1s ease-in-out;
+}
+.cm-button-b:hover{
+    border: 2px solid #589bea;
+    font-weight: bold;
+    font-size: 13px;
+}
+.cm-button-secondary{
+    background-color: #fff;
+    border: 1px solid #589bea;
+    color: #589bea;
+    text-align: center;
+    height: 30px;
+    border-radius: 5px;
+    font-size: 10px;
+    text-transform: uppercase;
+    transition: all 0.1s ease-in-out;
+}
+.cm-button-secondary:hover{
+    font-weight: bold;
+}
+
+/* ICONS */
+.cm-icon{
+    color: #ff6600;
+    font-size: 20px;
+    transition: all 0.1s ease-in-out;
+}
+.cm-icon-2{
+    color: #ff6600;
+    font-size: 16px;
+}
+.cm-icon-3{
+    color: #fff;
+    font-size: 15px;
+    transition: all 0.1s;
+}
+.cm-icon-3:hover{
+    font-size: 20px;
+}
+.cm-icon-4{
+    color: #ff6600;
+    font-size: 25px;
+    transition: all 0.1 ease-in-out;
+}
+.cm-icon-4:hover{
+    color: #ccc;
+}
+/* TEXT */
+.cm-text{
+    padding: 20px;
+}
+.cm-text-light{
+    font-size: 12px;
+}
+.cm-text-p1{
+    padding-left: 10px;
+}
+.cm-text-dark{
+    margin-top: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #ff6600;
+    text-transform: uppercase;
+}
+
+/* PROJECT SPECIFIC CLASSES */
+
+/* Logo */
+.cm-logo{
+    height: 40px;
+    transition: all .2s ease;
+}
+.cm-logo:hover{
+    height: 41px;
+}
+
+/* PROGRESS BAR */
+.cm-progress-container{
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    background-color: #ccc;
+    height: 20px;
+    border-radius: 10px;
+    margin-top: 30px;
+}
+.cm-progress{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #589bea;
+    height: 100%;
+    border-radius: 15px;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    font-size: 12px;
+}
+/* NAVBAR (Header) */
+.header{
+    grid-area: header;
+}
+.navbar{
+    display: grid;
+    min-height: 80px;
+    grid-auto-flow: column;
+    grid-gap: 1.5em;
+}
+.logo{
+    display: grid;
+    justify-content: start;
+    align-content: center;
+    margin-left: 20px;
+}
+.navbar-links{
+    display: grid;
+    justify-content: right;
+    align-content: center;
+    grid-auto-flow: column;
+    grid-gap: 1.5em;
+    margin-right: 20px;
+}
+.cm-users{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+    border: 1px solid rgba(209, 209, 209, 0.8);
+}
+/* Sidenav */
+.side-navigation{
+    grid-area: side-navigation;
+    display: flex;
+    flex-direction: column;
+
+}
+.sidenav-list{
+    padding: 0;
+    margin-top: 10px;
+    list-style-type: none;
+}
+.sidenav-list-item{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 50px;
+    margin-top: 20px;
+    text-align: center;
+}
+.icon-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 60px;
+    width: 60px;
+    border-radius: 5px;
+    border: 2px solid rgba(209,209,209,0.4);
+    transition: all 0.1s;
+}
+.icon-container:hover{
+    border: 2px solid #ff6600;
+}
+.icon-container:hover .cm-icon{
+    font-size: 30px;
+}
+.tooltip {
+    visibility: hidden;
+    width: 100px;
+    background-color: rgba(0,0,0, 0.8);
+    color: white;
+    text-align: center;
+    border-radius: 5px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 15;
+    left: 6em;
+    font-size: 14px;
+    font-weight: bold;
+  }
+.icon-container:hover .tooltip {
+    visibility: visible;
+  }
+
+/* Activity area */
+.activity-area{
+    grid-area: activity-area;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+}
+.activity-area-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+    height: 90%;
+    border-radius: 25px;
+    border: 1px solid rgba(209, 209, 209, .2);
+    background-color: rgba(240, 240, 240, 0.1);
+    overflow-y: scroll;
+}
+
+.activity-item{
+    margin-top: 5px;
+}
+
+/* FOOTER */
+.footer{
+    grid-area: footer;
+    background-color: #0D4D96;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    color: #fff;
+}
+.footer-content{
+    display: flex;
+    align-items: center;
+}
+.cm-h6{
+    font-size: 12px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.cm-footer-icon{
+    height: 20px;
+}

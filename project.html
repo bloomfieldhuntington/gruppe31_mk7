@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./css/project.css">
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="icon" href="./img/erigoIcon.png">
+    <script src="https://kit.fontawesome.com/a23c2d46ea.js"></script>
+    <title>Gruppe 31 | Kanban</title>
+</head>
+<body id="body">
+
+
+    <!-- GRID -->
+    <div class="container">
+
+        <!-- HEADER -->
+    <header class="header">
+            <nav class="nav">
+                <div class="navbar">
+                    <div class="logo">
+                            <a href="./dashboard.html"><img class="cm-logo" src="./img/erigoLogo2.svg" alt=""></a>
+                    </div>
+                    <div class="cm-progress-container">
+                        <div id="progress" class="cm-progress"></div>
+                    </div>
+                    <div class="navbar-links">
+                        <div id="dark-mode-icon" class="cm-users"><i class="fas fa-adjust cm-icon-2"></i></div>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <!-- SIDE NAVIGATION LEFT -->
+        <aside class="side-navigation">
+            <ul class="sidenav-list">
+
+                <li class="sidenav-list-item"><div id="addRow" class="icon-container"><i class="fas fa-columns cm-icon"></i>
+                    <span class="tooltip">Add Column</span>
+                    </div></li>
+                <li class="sidenav-list-item"><div id="addCard" class="icon-container"><i class="fas fa-tasks cm-icon"></i>
+                    <span class="tooltip">Add Card</span>
+                    </div></li>
+                <li class="sidenav-list-item"><div id="cardDisposal" class="icon-container"><i class="fas fa-trash cm-icon"></i>
+                    <span class="tooltip">Drop Cards Here to Delete</span>
+                    </div></li>
+                    <li class="sidenav-list-item"><a href="./welcome.html"><div class="icon-container"><i class="fas fa-sign-out-alt cm-icon"></i></div></a></li>
+
+            </ul>
+        </aside>
+        <main id="main" class="main">
+            
+
+               
+         
+
+        </main>
+
+        <!-- ACTIVITY AREA RIGHT -->
+        <aside  class="activity-area">
+            <div id="activityContainer" class="activity-area-container cm-shadow-c">
+                <h3 class="activity-header">Activity</h3>
+                <div class="activity-item cm-text-light cm-card-2 cm-shadow-c">
+                    <h3 class="cm-text-p1">Name</h3>
+                    <p class="cm-text-p1">Did this</p>
+                    <p class="activity-time cm-text-p1">2019-30-14</p>
+                </div>
+
+            </div>
+        </aside>
+    </div>
+    <script src="js/cookies.js"></script>
+    <script src="js/darkmode.js"></script>
+    <script src="./js/fProject.js"></script>
+    <script src="./js/project.js"></script>
+</body>
+</html>
